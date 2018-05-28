@@ -1,11 +1,5 @@
-@import url(font-awesome.min.css);
+@import url(fontawesome-all.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
-
-/*
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 /* Reset */
 
@@ -1623,7 +1617,15 @@
 	}
 
 	body {
-		background: #023467;
+		position: relative;
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/intro.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/intro.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/intro.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/intro.jpg");
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -3217,6 +3219,14 @@
 
 	.wrapper {
 		position: relative;
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/intro.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/intro.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/intro.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/intro.jpg");
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 
 		.wrapper > .inner {
@@ -3250,31 +3260,31 @@
 			}
 
 		.wrapper.alt {
-			background-color: #1C293E;
+			background-color: #001a33;
 		}
 
 		.wrapper.style1 {
-			background-color: #1E66AF;
+			background-color: #001a33;
 		}
 
 		.wrapper.style1-alt {
-			background-color: #1E66AF;
+			background-color: #001a33;
 		}
 
-		.wrapper.style2 {
-			background-color: #185694;
+		.style2 {
+			background-color: rgba(13, 13, 13, 0.8);
 		}
 
 		.wrapper.style2-alt {
-			background-color: #185694;
+			background-color: #001a33;
 		}
 
-		.wrapper.style3 {
-			background-color: #154678;
+		.style3 {
+			background-color: rgba(13, 13, 13, 0.8);
 		}
 
 		.wrapper.style3-alt {
-			background-color: #154678;
+			background-color: #001a33;
 		}
 
 		.wrapper.fullscreen {
@@ -3535,7 +3545,7 @@
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #023467;
+		background-color: rgba(13, 13, 13, 1);;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3884,14 +3894,6 @@
 /* Intro */
 
 	#intro {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/intro.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/intro.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/intro.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/intro.jpg");
-		background-attachment: fixed;
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
 	}
 		#intro:after {
 			-moz-pointer-events: none;
@@ -3948,7 +3950,10 @@
 		@media screen and (max-width: 1280px) {
 
 			#intro {
-				background-attachment: scroll;
 			}
 
 		}
+
+/*.fade {
+	background-color: rgba(0, 0, 0, 0.8);
+}*/
