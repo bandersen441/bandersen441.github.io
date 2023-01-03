@@ -1652,15 +1652,7 @@
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
-				font-size: 13pt;
-			}
-
-		}
-
-		@media screen and (max-width: 1680px) {
-
-			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 14pt;
 			}
 
 		}
@@ -2873,6 +2865,10 @@
 		text-align: center;
 	}
 
+	section#one {
+		padding-top: 4em;
+	}
+
 	header p {
 		color: rgba(255, 255, 255, 0.35);
 		position: relative;
@@ -3239,7 +3235,7 @@
 			width: 100vw;
 			height: 100vh;
 			background-color: #212931;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.3), rgba(19, 21, 25, 0.3)), url("images/intro.jpg");
+			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("images/intro.jpg");
 			/*background-image: -moz-linear-gradient(top, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/intro.jpg");
 			background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("images/intro.jpg");
 			background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/intro.jpg");
@@ -3294,7 +3290,9 @@
 		}
 
 		.style2 {
-			background-color: rgba(0, 13, 26, 0.8);
+			background-color: rgb(0, 28, 57);
+			padding-left: 7%;
+			padding-right: 7%;
 		}
 
 		.wrapper.style2-alt {
@@ -3302,7 +3300,7 @@
 		}
 
 		.style3 {
-			background-color: rgba(13, 13, 13, 0.5);
+			background-color: rgb(0, 28, 57);;
 		}
 
 		.wrapper.style3-alt {
@@ -3556,7 +3554,7 @@
 
 	#footer > .inner .menu {
 		font-size: 0.8em;
-		color: rgba(255, 255, 255, 0.15);
+		color: rgba(255, 255, 255, 0.8);
 	}
 
 	#header + #wrapper + #footer > .inner {
@@ -3975,6 +3973,41 @@
 			}
 
 		}
+
+		#intro .more {
+		    transform: translateY(0);
+		    border: none;
+		    bottom: 0;
+		    color: #ffffff;
+		    font-size: 0.8em;
+		    height: 8.5em;
+		    left: 50%;
+		    letter-spacing: 0.225em;
+		    margin-left: -8.5em;
+		    opacity: 1;
+		    outline: 0;
+		    padding-left: 0.225em;
+		    position: absolute;
+		    text-align: center;
+		    text-transform: uppercase;
+		    width: 16em;
+		    z-index: 1;
+		}
+
+			#intro .more:after {
+				background-image: url("images/arrow.svg");
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: contain;
+				bottom: 4em;
+				content: '';
+				display: block;
+				height: 1.5em;
+				left: 50%;
+				margin: 0 0 0 -0.75em;
+				position: absolute;
+				width: 1.5em;
+			}
 
 /*.fade {
 	background-color: rgba(0, 0, 0, 0.8);
