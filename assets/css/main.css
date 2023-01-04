@@ -16,6 +16,31 @@
 		display: block;
 	}
 
+/* figure { */
+/*     display: inline-block; */
+/*     position: relative; */
+/*     margin: 0; */
+/*     /\* margin: 70px; /\\* adjust as needed *\\/ *\/ */
+/* } */
+/* figure img { */
+/*     vertical-align: top; */
+/* } */
+/* figure figcaption { */
+/*   position: absolute; */
+/*   bottom: 100%;/\* update*\/ */
+/*   width: 100%; */
+/*   left: 0; */
+/*   right: 0; */
+	/* } */
+figcaption {
+  position: absolute;
+  top: 100%;/* update*/
+  width: 100%;
+  font-size: 80%;
+  left: 0;
+  right: 0;
+}
+
 	body {
 		line-height: 1;
 	}
@@ -2637,6 +2662,46 @@
 		ol li {
 			padding-left: 0.25em;
 		}
+/* ol { */
+/*     transform: rotate(180deg); */
+/* } */
+/* ol > li { */
+/*     transform: rotate(-180deg); */
+/* } */
+/* ol { */
+/*     counter-reset: list; */
+/* } */
+/* ol > li { */
+/*     list-style: none; */
+/* } */
+/* ol > li:before { */
+/*     content: counter(list) ") "; */
+/*     counter-increment: list; */
+		/* } */
+
+ol {
+  /* margin: 0 0 1.5em; */
+  /* padding: 0; */
+  counter-reset: item;
+}
+
+ol > li {
+  /* margin: 0; */
+  /* padding: 0 0 0 2em; */
+  /* text-indent: -2em; */
+  list-style-type: none;
+  counter-increment: item;
+}
+
+ol > li:before {
+  display: inline-block;
+  /* width: 1em; */
+  padding-right: 0.5em;
+  /* font-weight: bold; */
+  /* color: white; */
+  /* text-align: right; */
+  content: counter(item) ")";
+}
 
 	ul {
 		list-style: disc;
