@@ -25,14 +25,14 @@
 				$body.addClass('is-ie');
 
 		// Disable animations/transitions until the page has loaded.
-			if (skel.canUse('transition'))
-				$body.addClass('is-loading');
+			// if (skel.canUse('transition'))
+			// 	$body.addClass('is-loading');
 
-			$window.on('load', function() {
-				window.setTimeout(function() {
-					$body.removeClass('is-loading');
-				}, 100);
-			});
+			// $window.on('load', function() {
+			// 	window.setTimeout(function() {
+			// 		$body.removeClass('is-loading');
+			// 	}, 100);
+			// });
 
 		// Forms.
 
@@ -101,14 +101,14 @@
 								initialize: function() {
 
 									// Deactivate section.
-										if (skel.canUse('transition'))
-											$section.addClass('inactive');
+										// if (skel.canUse('transition'))
+										// 	$section.addClass('inactive');
 
 								},
 								enter: function() {
 
 									// Activate section.
-										$section.removeClass('inactive');
+										// $section.removeClass('inactive');
 
 									// No locked links? Deactivate all links and activate this section's one.
 										if ($sidebar_a.filter('.active-locked').length == 0) {
@@ -154,35 +154,35 @@
 					initialize: function() {
 
 						// Deactivate section.
-							if (skel.canUse('transition'))
-								$(this).addClass('inactive');
+							// if (skel.canUse('transition'))
+							// 	$(this).addClass('inactive');
 
 					},
 					enter: function() {
 
 						// Activate section.
-							$(this).removeClass('inactive');
+							// $(this).removeClass('inactive');
 
 					}
 				})
-				.each(function() {
+				// .each(function() {
 
-					var	$this = $(this),
-						$image = $this.find('.image'),
-						$img = $image.find('img'),
-						x;
+				// 	var	$this = $(this),
+				// 		$image = $this.find('.image'),
+				// 		$img = $image.find('img'),
+				// 		x;
 
-					// Assign image.
-						$image.css('background-image', 'url(' + $img.attr('src') + ')');
+				// 	// Assign image.
+				// 		$image.css('background-image', 'url(' + $img.attr('src') + ')');
 
-					// Set background position.
-						if (x = $img.data('position'))
-							$image.css('background-position', x);
+				// 	// Set background position.
+				// 		if (x = $img.data('position'))
+				// 			$image.css('background-position', x);
 
-					// Hide <img>.
-						$img.hide();
+				// 	// Hide <img>.
+				// 		$img.hide();
 
-				});
+				// });
 
 		// Features.
 			if (skel.canUse('transition'))
@@ -194,13 +194,13 @@
 						initialize: function() {
 
 							// Deactivate section.
-								$(this).addClass('inactive');
+								// $(this).addClass('inactive');
 
 						},
 						enter: function() {
 
 							// Activate section.
-								$(this).removeClass('inactive');
+								// $(this).removeClass('inactive');
 
 						}
 					});
